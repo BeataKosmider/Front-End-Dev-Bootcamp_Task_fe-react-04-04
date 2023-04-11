@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class Counter extends React.Component {
   constructor(props) {
@@ -6,22 +6,26 @@ class Counter extends React.Component {
 
     this.state = {
       ticks: 0,
-      isBtnDisabeld: false
-    }
+      isBtnDisabled: false,
+    };
   }
 
   incrementTicks = () => {
     let { ticks } = this.state;
     ticks++;
     this.setState({ ticks }, () => {
-      if(this.state.ticks === 10) {
-        this.setState({isBtnDisabeld: true});
+      if (this.state.ticks === 10) {
+        this.setState({ isBtnDisabled: true });
       }
-    })
-  }
+    });
+  };
 
   render() {
-    return <button disabled={this.state.isBtnDisabeld} onClick={this.incrementTicks}>{this.state.ticks}</button>;
+    return (
+      <button disabled={this.state.isBtnDisabled} onClick={this.incrementTicks}>
+        {this.state.ticks}
+      </button>
+    );
   }
 }
 
