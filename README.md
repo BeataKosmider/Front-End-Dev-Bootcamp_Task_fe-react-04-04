@@ -1,3 +1,5 @@
+# Task performed during Front-End Developer Bootcamp
+
 Wykorzystaj poprzednie zadanie i dodaj do swojego licznika limit. Jeżeli wartość licznika wyniesie 10, zablokuj przycisk przy pomocy właściwości disabled.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
